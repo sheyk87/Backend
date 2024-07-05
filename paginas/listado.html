@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Museum - Codo a Codo - Backend</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="shortcut icon" href="../static/imagenes/codoacodo.png" type="image/x-icon">
+
+        <link rel="stylesheet" href="../static/css/header.css">
+        <link rel="stylesheet" href="../static/css/inicio.css">
+        <link rel="stylesheet" href="../static/css/listado.css">
+
+        <!-- https://fontawesome.com/search?o=r&m=free -->
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    </head>
+    <body>
+        <header class="header">
+            <div class="container">
+                <div class="row align-items-center justify-content-between">
+                    <div class="logo">
+                    <img id="logo-pagina" src="../static/imagenes/codoacodo.png" width="100" alt="Frontend-Museum">
+                    <a href="../index.html">Museum</a>
+                    </div>
+                    <button type="button" class="nav-toggler">
+                    <span></span>
+                    </button>
+                    <nav class="nav">
+                    <ul>
+                        <li><a href="../index.html">Inicio</a></li>
+                        <li><a href="#" class="active">Listado</a></li>
+                        <li><a href="altas.html">Altas</a></li>
+                        <li><a href="modificaciones.html">Modificaciones</a></li>
+                        <li><a href="listadoEliminar.html">Eliminaciones</a></li>
+                    </ul>
+                    </nav>
+                </div>
+            </div>
+            <script src="../static/js/script.js"></script>
+            <div id="progressBar"></div>
+        </header>
+        
+        <main>
+            <div id="contenedor-inicio">
+                <div class="contenedor-cards">
+                    <div class="card">
+                        <div class="card-content">
+                            <h1>Listado de Productos del Inventario</h1><br>
+    
+                            <table> <!-- Se crea una tabla para mostrar los productos. -->
+                                <thead> <!--Encabezado de la tabla con columnas para código, descripción, cantidad, precio y acciones.-->
+                                    <tr>
+                                        <th>Código</th>
+                                        <th>Descripción</th>
+                                        <th>Cantidad</th>
+                                        <th>Precio</th>
+                                        <th>Proveedor</th>
+                                    </tr>
+                                </thead>
+                            
+                                <tbody id="tablaProductos"> </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <script src="../static/js/listado.js"></script>
+    </body>
+</html>
